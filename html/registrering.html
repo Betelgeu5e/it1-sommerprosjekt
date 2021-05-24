@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/javascript/firestore.js"></script>
+    </head>
+<body>
+    <h1>Registreringsnettside.</h1>
+    <p>I konsollen kan du skrive inn verdiene i parameterene til funksjonene AS(addSkapning) og AK(addKarakter).</p>
+    <ul>
+        <li id="ak"></li>
+        <li id="as"></li>
+    </ul>
+    <a href="/html/">Gå tilbake til hjemmesiden</a>
+    <script>
+        const rensString = (string) => {
+            return String(string.trim().toLowerCase());
+        }
+        const trimString = (string) => {
+            return String(string.trim());
+        }
+        const gjorTilReferanse = (kolleksjon, id) => {
+            return db.collection(kolleksjon.trim()).doc(rensString(id));
+        }
+        SKAPNINGER = db.collection('Skapninger');
+        KARAKTERER = db.collection('Karakterer');
+
+
+        const akElement = document.querySelector('#ak');
+        const asElement = document.querySelector('#as');
+
+        const functionAKAsString = 'AK(id, hverdagsnavn, fornavn, etternavn, karriere, beskrivelse, bildeSrc, erLeder, fodselsAr, BokForste, lokasjon, skapning, relevans, lesMer, sentrerBilde)';
+        const functionASAsString = 'AS(id, navn, orden, beskrivelse, bildeSrc, fientlighet, intelligens, førsteForekomst, lesMer)';
+
+        akElement.textContent = functionAKAsString;
+        asElement.textContent = functionASAsString;
+
+        const AK = (id, hverdagsnavn, fornavn, etternavn, karriere, beskrivelse, bildeSrc, erLeder, fodselsAr, BokForste, lokasjon, skapning, relevans, lesMer, sentrerBilde) => {
+            SKAPNINGER.doc(rensString(id)).set({
+                hverdagsnavn: trimString(hverdagsnavn),
+                fornavn: trimString(fornavn),
+                etternavn: trimString(etternavn),
+                karriere: trimString(karriere),
+                beskrivelse: trimString(beskrivelse),
+                bilde: rensString(bildeSrc),
+                erLeder: Boolean(erLeder),
+                fodselsAr: Number(fodselsAr),
+                BokForste: gjorTilReferanse('Boker', rensString(BokForste)),
+                Lokasjon: gjorTilReferanse('Lokasjoner', rensString(lokasjon)),
+                Skapning: gjorTilReferanse('Skapninger', rensString(skapning)),
+                relevans: Number(relevans),
+                lesMer: trimString(lesMer),
+                sentrerBilde: Boolean(sentrerBilde)
+            })
+            logFunctionAK
+        }
+        const logFunctionAK = () => {
+            console.log(functionAKAsString);
+            console.log('');
+            console.log('');
+        }
+        logFunctionAK();
+
+        const AS = (id, navn, orden, beskrivelse, bildeSrc, fientlighet, intelligens, forsteForekomst, lesMer, sentrerBilde) => {
+            SKAPNINGER.doc(rensString(id)).set({
+                navn: trimString(navn),
+                orden: trimString(orden),
+                beskrivelse: trimString(beskrivelse),
+                bilde: rensString(bildeSrc),
+                fientlighet: Number(fientlighet),
+                intelligens: Number(intelligens),
+                forsteForekomst: gjorTilReferanse('Boker', rensString(forsteForekomst)),
+                lesMer: trimString(lesMer),
+                sentrerBilde: Boolean(sentrerBilde)
+            });
+            logFunctionAS();
+        }
+        const logFunctionAS = () => {
+            console.log(functionASAsString);
+            console.log('');
+            console.log('');
+        }
+        logFunctionAS();
+    </script>
+</body>
+</html>

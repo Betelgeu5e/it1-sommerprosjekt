@@ -1,0 +1,106 @@
+Monstre:
+Drage - m001
+Steintroll - m002
+
+Karakterer:
+    Dandelion - k001: 2
+    Ferrant de Lettenhove - k002: 5
+    Geralt of Rivia - k003: 1
+    Kong Belohun - k004: 5
+    Viraxas - k005: 6
+    Egmund - k006: 6
+    Yennifer - k007: 2
+    Ciri - k008: 2
+    Triss - k009: 3
+    Essi/Little Eye - k010: 5
+    Nivellen - k011: 5
+    Tissaia de Vries - k012: 4
+    Vilgefortz of Roggeveen - k013: 4
+    Lytta Neyd - k014: 4
+    Philippa Eilhart - k015: 4
+    Rience - k016: 4
+    Istredd - k017: 4
+    Visenna - k018: 3
+    Keira Metz - k019: 4
+    Cahir Mawr Dyffryn aep Ceallach - k020: 3
+    Eithné - k021: 4
+    Francesca Findabair - k022: 4
+    Demavend III - k023: 4
+    Foltest - k024: 4
+    Henselt - k025: 5
+    Radovid V - k026: 4
+    Vizimir II - k027: 4
+    Esterad Thyssen - k028: 5
+    Meve - k029: 5
+    Ethain - k030: 5
+    Venslav - k031: 5
+    Eist Tuirseach - k032: 4
+    Harald an Craite - k033: 7
+    Calanthe - k034: 3
+    Emhyr var Emreis - k035: 3
+
+
+
+
+Lokasjoner:
+l001 - Kovir and Poviss
+l002 - Zerrikania
+l003 - Redania
+l004 - Kaedwen
+l005 - Temeria
+l006 - Aedirn
+l007 - Lyria and Rivia
+l008 - Cidaris
+l009 - Kerack
+l010 - Brokilon
+l011 - Verden
+l012 - Brugge
+l013 - Skellige
+l014 - Cintra
+1015 - Sodden
+l016 - Dol Blathanna
+l017 - Nilfgaard
+l018 - Toussaint
+
+Relevans:
+1 - Geralt
+2 - Hovedpersoner
+3 - Veldig relevante sidekarakterer
+4 - Sidekarakterer
+5 - Kortvarende sidekarakterer
+6 - Veldig skjeldne sidekarakterer
+7 - Helt urelevant
+
+Fientlighet:
+0 - Fredlig
+1 - Fredelig til angrepet
+2 - Fientlig når forstyrret
+3 - Selvbestemt fientlighet
+4 - Fientlig
+
+Intelligens:
+0 - Ingen intelligens
+1 - Kan forstå språk til en viss grad
+2 - Kan forstå språk
+3 - Kan snakke
+4 - Menneskeinteligens
+5 - Overmennesklig intelligens
+
+Mektighet:
+0 - Trash
+1 - Litt
+2 - Medium
+3 - Høy
+4 - Gud
+
+Navn
+Leder
+Beskrivelse
+Flagg
+Våpenskjold
+Hovedstad
+Les Mer
+Religion
+Språk
+Valuta
+Status

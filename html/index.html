@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hjem</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+    <!-- Original CSS -->
+    <link rel="stylesheet" href="hjem.css">
+    <!-- Original JS -->
+    <script src="hjem.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Generell CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <!-- Generell JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="/javascript/firestore.js"></script>
+    <script src="/javascript/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="hovednav">
+            <a class="nav-celle nav-side-lenke nav-lenke-text" href="/html/skapninger/">Skapninger</a>
+            <div class="nav-celle nav-div">
+                <a class="logo-link active" href="/html/"><img class="toggle-logo logo" src="/images/logo-vanlig.svg" alt=""></a>
+                <a class="nav-lenke-text" href="/html/boker/">Bøkene</a>
+            </div>
+            <a class="nav-celle nav-side-lenke nav-lenke-text" href="/html/karakterer/">Karakterer</a>    
+        </nav>
+    </header>
+    <main>
+        <section id="kartkonteiner">
+            <img id="kart" src="../images/the-witcher-world-map-no-cities.jpg" alt="">
+            <section id="lokasjonskonteiner">
+                <a id="kovir-og-poviss" class="lokasjon" href="lokasjoner/lokasjon.html?id=l001">Kovir og Poviss</a>
+                <a id="zerrikania" class="lokasjon" href="lokasjoner/lokasjon.html?id=l002">Zerrikania</a>
+                <a id="redania" class="lokasjon" href="lokasjoner/lokasjon.html?id=l003">Redania</a>
+                <a id="kaedwen" class="lokasjon" href="lokasjoner/lokasjon.html?id=l004">Kaedwen</a>
+                <a id="temeria" class="lokasjon" href="lokasjoner/lokasjon.html?id=l005">Temeria</a>
+                <a id="aedirn" class="lokasjon" href="lokasjoner/lokasjon.html?id=l006">Aedirn</a>
+                <a id="lyria-og-rivia" class="lokasjon" href="lokasjoner/lokasjon.html?id=l007">Lyria og Rivia</a>
+                <a id="cidaris" class="lokasjon" href="lokasjoner/lokasjon.html?id=l008">Cidaris</a>
+                <a id="kerack" class="lokasjon" href="lokasjoner/lokasjon.html?id=l009">Kerack</a>
+                <a id="brokilon" class="lokasjon" href="lokasjoner/lokasjon.html?id=l010">Brokilon</a>
+                <a id="verden" class="lokasjon" href="lokasjoner/lokasjon.html?id=l011">Verden</a>
+                <a id="brugge" class="lokasjon" href="lokasjoner/lokasjon.html?id=l012">Brugge</a>
+                <a id="skellige" class="lokasjon" href="lokasjoner/lokasjon.html?id=l013">Skellige</a>
+                <a id="cintra" class="lokasjon" href="lokasjoner/lokasjon.html?id=l014">Cintra</a>
+                <a id="sodden" class="lokasjon" href="lokasjoner/lokasjon.html?id=l015">Sodden</a>
+                <a id="dol-blathanna" class="lokasjon" href="lokasjoner/lokasjon.html?id=l016">Dol Blathanna</a>
+                <a id="nilfgaard" class="lokasjon" href="lokasjoner/lokasjon.html?id=l017">Nilfgaard</a>
+                <a id="toussaint" class="lokasjon" href="lokasjoner/lokasjon.html?id=l018">Toussaint</a>
+            </section>
+        </section>
+    </main>
+    <footer class="hovedfooter">
+        <div class="hovedfooter-celle hovedfooter-celle-info">
+            <p>Laget av Vegard K. Hovland:</p>
+            <a href="mailto:vegard.kyrkjedelen@protonmail.com">Email</a>
+            <a href="tel:+4746886516">Telefon</a>
+        </div>
+        <div class="hovedfooter-celle hovedfooter-celle-admin">
+            <a href="/html/registrering.html">Admin</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.interaktiv-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-top: black solid 0.2em;
+}
+.interaktiv-grid .celle {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    border-right: hsl(0, 0%, 0%) solid 0.2em;
+    border-bottom: hsl(0, 0%, 0%) solid 0.2em;
+    background-color: hsl(0, 0%, 60%);
+    transition: 100ms;
+}
+.interaktiv-grid .celle:hover {
+    transform: translate(0, -10%);
+    z-index: 100;
+    border: hsl(0, 0%, 0%) solid 0.2em;
+    box-shadow: 0 1.7rem 50px hsla(0, 0%, 0%, 0.561);
+}
+.interaktiv-grid .celle-bilde {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+}
+.interaktiv-grid .sentrert-celle-bilde {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.interaktiv-grid .celle-tekst {
+    font-size: 1.2em;
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    position: absolute;
+    z-index: 2;
+    top: 85%;
+    left: 0;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    padding: 0.2em 1em;
+}
+@media(max-width: 1200px) {
+    .interaktiv-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media(max-width: 900px) {
+    .interaktiv-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 700px) {
+    .interaktiv-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .interaktiv-grid .celle-bilde {
+        width: auto;
+        height: 100%;
+    }
+}

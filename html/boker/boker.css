@@ -1,0 +1,57 @@
+#bokerkonteiner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: hsl(0, 0%, 0%) solid 0.2em;
+}
+.bok {
+    font-size: 1rem;
+    position: relative;
+    width: 100%;
+}
+.bok .omslag {
+    width: 100%;
+    display: block;
+}
+.bok .tekst-konteiner {
+    font-size: 1.4em;
+    display: none;
+    position: absolute;
+    height: 40%;
+    z-index: 2;
+    background-color: hsla(0, 0%, 100%);
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    text-align: center;
+    border-radius: 1em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.bok:hover .tekst-konteiner {
+    display: flex;
+}
+.bok .tekst-konteiner .avsnitt {
+    margin-bottom: 1em;
+}
+.bok .tekst-konteiner .avsnitt .verdi {
+    display: block;
+}
+@media(max-width: 1200px) {
+    #bokerkonteiner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 900px) {
+    #bokerkonteiner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 700px) {
+    #bokerkonteiner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

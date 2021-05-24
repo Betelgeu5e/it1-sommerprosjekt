@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#kartkonteiner {
+    height: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+#kart {
+    width: 100%;
+}
+#lokasjonskonteiner {
+    font-size: 2.5rem;
+}
+.lokasjon {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.lokasjon:hover {
+    color: hsl(0, 0%, 30%);
+}
+a#kovir-og-poviss {
+    font-size: 1.4em;
+    top: 4%;
+    left: 23%;
+}
+a#zerrikania {
+    font-size: 0.9em;
+    top: 64%;
+    left: 80%;
+}
+a#zerrikania::after {
+    content: " →";
+}
+a#redania {
+    font-size: 1.5em;
+    top: 16%;
+    left: 40%;
+}
+a#kaedwen {
+    font-size: 1.4em;
+    top: 12%;
+    left: 69%;
+}
+a#temeria {
+    font-size: 1.6em;
+    top: 27.5%;
+    left: 44%;
+}
+a#aedirn {
+    font-size: 1.2em;
+    top: 25%;
+    left: 72%;
+}
+a#lyria-og-rivia {
+    font-size: 0.8em;
+    top: 32%;
+    left: 74%;
+}
+a#cidaris {
+    font-size: 0.7em;
+    top: 31%;
+    left: 29%;
+}
+a#kerack {
+    transform: rotate(-40deg);
+    font-size: 0.6em;
+    top: 34.5%;
+    left: 32.5%;
+}
+a#brokilon {
+    transform: rotate(40deg);
+    font-size: 0.6em;
+    top: 36%;
+    left: 38.5%;
+}
+a#verden {
+    transform: rotate(40deg);
+    font-size: 0.9em;
+    top: 39%;
+    left: 34%;
+}
+a#brugge {
+    transform: rotate(-40deg);
+    font-size: 0.8em;
+    top: 39%;
+    left: 46%;
+}
+a#skellige {
+    font-size: 1.2em;
+    top: 45%;
+    left: 18%;
+}
+a#cintra {
+    font-size: 1.1em;
+    top: 44%;
+    left: 42%;
+}
+a#sodden {
+    font-size: 1.1em;
+    top: 41%;
+    left: 58%;
+}
+a#dol-blathanna {
+    font-size: 0.9em;
+    top: 19.5%;
+    left: 77%;
+}
+a#nilfgaard {
+    transform: rotate(70deg);
+    font-size: 4.5em;
+    top: 70%;
+    left: 43%;
+}
+a#toussaint {
+    font-size: 1em;
+    top: 51%;
+    left: 73%;
+}
+@media (max-width: 1200px) {
+    #lokasjonskonteiner {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 900px) {
+    #kartkonteiner {
+        width: 100%;
+    }
+    #lokasjonskonteiner {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 700px) {
+    #kartkonteiner {
+        display: grid;
+        place-items: center;
+        height: fit-content;
+        margin-top: 2em;
+    }
+    #lokasjonskonteiner {
+        font-size: 3rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3px;
+    }
+    #kart {
+        filter: blur(3px);
+        height: 100%;
+    }
+    .lokasjon {
+        position: initial;
+        font-size: 1em !important;
+        transform: rotate(0deg) !important;
+        background-color: white;
+        border-radius: 0;
+    }
+    a#zerrikania::after {
+        content: none;
+    }
+}
+

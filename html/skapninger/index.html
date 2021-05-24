@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Skapninger</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <!-- Generell CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <!-- Generell JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="/javascript/firestore.js"></script>
+    <script src="/javascript/main.js" defer></script>
+    <!-- Original JS -->
+    <script src="skapninger.js" defer></script>
+    <!-- Original CSS -->
+    <link rel="stylesheet" href="skapninger.css">
+    <link rel="stylesheet" href="/css/interaktivt-grid.css">
+    <link rel="stylesheet" href="/css/sortering.css">
+</head>
+<body>
+    <header>
+        <nav class="hovednav">
+            <a class="nav-celle nav-side-lenke nav-lenke-text active" href="/html/skapninger/">Skapninger</a>
+            <div class="nav-celle nav-div">
+                <a class="logo-link " href="/html/"><img class="toggle-logo logo" src="/images/logo-vanlig.svg" alt=""></a>
+                <a class="nav-lenke-text" href="/html/boker/">Bøkene</a>
+            </div>
+            <a class="nav-celle nav-side-lenke nav-lenke-text" href="/html/karakterer/">Karakterer</a>    
+        </nav>
+    </header>
+    <main>
+        <section class="sorteringskonteiner">
+            <button id="bare-homo-knapp" class="celle sortering-knapp">Menneskeskapninger</button>
+            <select id="sorteringstype" class="celle sortering-select">
+                <option value="navn">A &rarr; Å</option>
+                <option value="intelligens">Intelligens</option>
+                <option value="fientlighet">Fientlighet</option>
+            </select>
+            <select id="sorter-ny-gammel" class="celle sortering-select">
+                <option value="asc">Lavt &rarr; Høyt</option>
+                <option value="desc">Høyt &rarr; Lavt</option>
+            </select>
+        </section>
+
+        <section id="skapningerkonteiner" class="interaktiv-grid">
+            
+        </section>
+    </main>
+    <footer class="hovedfooter">
+        <div class="hovedfooter-celle hovedfooter-celle-info">
+            <p>Laget av Vegard K. Hovland:</p>
+            <a href="mailto:vegard.kyrkjedelen@protonmail.com">Email</a>
+            <a href="tel:+4746886516">Telefon</a>
+        </div>
+        <div class="hovedfooter-celle hovedfooter-celle-admin">
+            <a href="/html/registrering.html">Admin</a>
+        </div>
+    </footer>
+</body>
+</html>
