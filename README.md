@@ -4,4 +4,4 @@ Dette prosjektet er et sommerprosjekt jeg lager til IT-timene.
 
 Her finner du info om de forskjellige karakterene og skapningene som eksisterer i universet.
 
-Sjekk ut nettsiden online [her](witcher.surge.sh)!
+Sjekk ut nettsiden online [her](https://witcher.surge.sh/)!
